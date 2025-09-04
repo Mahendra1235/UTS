@@ -1,5 +1,5 @@
 import React from "react";
-import ServicesImage from "../assets/uc.jpg"
+import ServicesImage from "../assets/group structure.png"
 
 export default function Services() {
   return (

@@ -2,7 +2,8 @@ import React from "react";
 import cloudIcon from "../assets/cloud.png";
 import automotiveIcon from "../assets/automotive.jpeg";
 import aiIcon from "../assets/ai.jpg";
-import IndustryPartners from "../Pages/IndustryPartners";
+import ContactUs from "../Pages/ContactUs";
+import Partners from "../Pages/Partners";
 
 export default function Home() {
   return (
@@ -47,7 +48,9 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <IndustryPartners/>
+      {/* <IndustryPartners/> */}
+      <Partners/>
+      <ContactUs/>
 
     </div>
   );

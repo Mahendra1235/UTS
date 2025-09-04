@@ -6,8 +6,8 @@ export default function Solutions() {
     <div>
       <img
               src={SolutionsImage}
-              alt="Our services"
-              className="services-image"
+              alt="Our solution"
+              className="solution-image"
             />
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/Logo.png"; // Make sure this path is correct
+import logo from "../assets/Logo-removebg-preview.png"; // Make sure this path is correct
 
 export default function Header() {
   return (

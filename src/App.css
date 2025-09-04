@@ -6,6 +6,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+
 img,
 .team-img,
 .vision-image,
@@ -56,9 +58,7 @@ body {
 
 .hero-section h1 {
   font-size: 3rem;
-  background: linear-gradient(to right, #0077cc, #00c6ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: linear-gradient(to right, #0077cc, #00c6ff);
   margin-bottom: 20px;
 }
 
@@ -161,8 +161,8 @@ body {
 
 /* ===== Header Container ===== */
 .header {
-  background: linear-gradient(90deg, #0077cc, #00bfa6, #ffc107);
-  padding: 15px 30px;
+  background: rgb(220, 195, 195);
+  padding: 0px 60px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   position: sticky;
   top: 0;
@@ -182,10 +182,11 @@ body {
 /* ===== Logo ===== */
 .logo {
   height: 100px;
-  width: auto;
+  width: 100%;
   object-fit: contain;
   transition: transform 0.3s ease;
-  border-radius: 25px;
+  border-radius: 35px;
+  margin-bottom: 10px;
   
 }
 
@@ -250,8 +251,8 @@ body {
 
 
 .contact-container {
-  min-height: fit-content;
-  padding: 4rem 2rem;
+  min-height: 73vh;
+  padding: 2rem 2rem;
   max-width: 1500px;
   margin: 40px auto;
   background-color: #ffffff;
@@ -336,7 +337,8 @@ body {
 
 /* USP Section */
 .usp-section {
-  background-image: url('./assets/Logo.png'); /* update path as needed */
+  height: 55vh;
+  background-image: url('./assets/cloud1.webp'); /* update path as needed */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -366,21 +368,22 @@ body {
 
 .usp-section h2 {
   font-size: 2rem;
-  color: #1d6fa5;
+  color: #c8cacb;
   margin-bottom: 20px;
+  border-bottom:5px solid white;
 }
 
 .usp-text {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 20px;
-  color: #444;
+  color: #f2f0f0;
 }
 
 .usp-highlights {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 50px;
   padding: 0;
   list-style: none;
   margin: 0;
@@ -523,9 +526,10 @@ body {
 }
 .about-extra-image {
   display: block;
-  max-width: 900px;
+  max-width: 1600px;
   height: auto;
   margin: 1rem auto;
+  margin-bottom: 50px;
   border-radius: 8px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
@@ -556,7 +560,7 @@ body {
   justify-content: center;
   align-items: center;
   max-height: 100vh; /* Full viewport height */
-  padding: 2rem;
+  padding: 0rem;
   background-color: #f9f9f9; /* Optional background */
   box-sizing: border-box;
   text-align: center;
@@ -565,7 +569,8 @@ body {
 .industry-heading {
   font-size: 2.5rem;
   color: #222;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  border-bottom:3px solid rgb(120, 120, 216);
 }
 
 .partnership-image {
@@ -580,13 +585,67 @@ body {
   display: block;
   max-width: 100%;
   width: 100%;
-  height: 80VH;
+max-height: 83vh;
+  padding: 150px;
   margin: 0 auto;
-  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); */
-  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+.solution-image {
+  display: block;
+  max-width: 100%;
+  height: 82vh;
+  width: 100%;
+  padding: 0px;
+  margin: 0 auto;
+}
+/*Footer page */
+.footer {
+  /* background: #6161c0; */
+  background-color: #111;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 2.8vh 2rem;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  z-index: 1000;
 }
 
-/* .services-image:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-} */
+.footer p {
+  margin: 0;
+  line-height: 1.5;
+}
+.partners-container {
+  text-align: center;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 50px; /* spacing between logos */
+  animation: scrollRight 20s linear infinite;
+}
+
+.partner-logo img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

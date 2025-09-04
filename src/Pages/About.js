@@ -2,6 +2,7 @@ import React from "react";
 import uspImage from "../assets/USP.png";
 import Leadership from "./Leadership";
 import extraImage from "../assets/group structure.png"
+import ContactUs from "./ContactUs";
 
 
 export default function About() {
@@ -50,6 +51,9 @@ export default function About() {
   alt="Extra visual about the company"
   className="about-extra-image"
 />
+<div>
+  <ContactUs/>
+</div>
 
     </div>
   );
