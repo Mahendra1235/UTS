@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/Logo-removebg-preview.png"; // Make sure this path is correct
+import logo from "../assets/Logo1.png"; // Make sure this path is correct
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const handleLinkClick = () => {
+    setMenuOpen(false); // close menu when a nav item is clicked
+  };
+
   return (
     <header className="header">
       <div className="header-container">
@@ -10,22 +20,29 @@ export default function Header() {
           <img src={logo} alt="Company Logo" className="logo" />
         </Link>
 
-        <nav className="nav">
+        {/* Hamburger icon */}
+        <div className="hamburger" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav className={`nav ${menuOpen ? "open" : ""}`}>
           <ul className="nav-list">
             <li className="nav-item">
-              <Link to="/about">About Us</Link>
+              <Link to="/about" onClick={handleLinkClick}>About Us</Link>
             </li>
             <li className="nav-item">
-              <Link to="/solutions">Solutions</Link>
+              <Link to="/solutions" onClick={handleLinkClick}>Solutions</Link>
             </li>
             <li className="nav-item">
-              <Link to="/services">Services</Link>
+              <Link to="/services" onClick={handleLinkClick}>Services</Link>
             </li>
             <li className="nav-item">
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact" onClick={handleLinkClick}>Contact Us</Link>
             </li>
             <li className="nav-item">
-              <Link to="/partners">Industry Partners</Link>
+              <Link to="/partners" onClick={handleLinkClick}>Industry Partners</Link>
             </li>
           </ul>
         </nav>

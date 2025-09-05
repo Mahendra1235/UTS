@@ -1,4 +1,7 @@
 import React from 'react';
+import SrikanthProfile from '../assets/leadership/Srikanth .png';
+import gopiProfile from '../assets/leadership/Gopi.png';
+import SundeepProfile from '../assets/leadership/Dass.png';
 // import MadhavanProfile from '../assets/';
 // import VenkateshProfile from '../assets/Team/Venkatesh Photo id.jpeg';
 
@@ -8,21 +11,21 @@ const teamMembers = [
 {
     name: 'Srikanth BG',
     role: 'Founder & Executive Director',
-    // image: VenkateshProfile,
+    image: SrikanthProfile,
     bio: 'Srikanth has over 3 decades of diverse experience in Business & Operation Leadership, Analytics, People Management. A Decade of experience in Entrepreneurship, rolling out New business models and Tech savvy.'
 },
   
 {
     name: 'Sundeep Dasa',
-    role: 'Director & Relationship Manager',
-    // image: VenkateshProfile,
+    role: 'Director - Corporate Relationship ',
+    image: SundeepProfile,
     bio: 'Sundeep Dasa has over three decades of hands-on experience in HR Leadership, Talent Management, and Operational Excellence, specializing in Talent Acquisition, HR Operations, and Strategic Resource Management.'
   },  
    {
     name: 'Gopi',
-    role: 'Embedded Systems & IOT ',
-    // image: MadhavanProfile,
-    bio: 'Gopi has over 2 decades of experience in software development and quality engineering. He has worked with prominent MNCs such as Honeywell, Juniper Networks, and Netsurion gaining extensive expertise in Development, Quality Engineering and Automation across a wide range of platforms, including Embedded Applications, Web and Mobile Applications, IoT, and Cyber Security.'
+    role: 'Director - Engineering Services ',
+    image: gopiProfile,
+    bio: 'Gopi has over 2 decades of experience in software development and quality engineering. He has worked with prominent MNCs such as Honeywell, Juniper Networks, and Netsurion gaining extensive expertise in Development, Quality Engineering and Automation across a wide range of platforms, '
   },
 ];
 
