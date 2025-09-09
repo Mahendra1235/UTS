@@ -506,7 +506,7 @@ body {
   background-color: white;
   padding: 2rem;
   margin: 0;
-  margin: 10px;
+  margin: 0px;
 }
 
 .contact-wrapper {
@@ -528,7 +528,7 @@ body {
 .contact-image img {
   width: 100%;
   max-width: 800px;
-  height: 65vh;
+  height: 75vh;
   object-fit: cover;
   display: block;
 }
@@ -539,7 +539,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 65vh;
+  height: 75vh;
   background: #e6cece;
 }
 

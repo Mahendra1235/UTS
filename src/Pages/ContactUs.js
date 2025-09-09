@@ -1,5 +1,5 @@
 import React from "react";
-import contactImg from "../assets/contact4.jpg"; // replace with your image path
+import contactImg from "../assets/Contact wm.jpeg"; // replace with your image path
 
 export default function ContactUs() {
   return (
