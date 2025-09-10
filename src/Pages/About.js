@@ -1,9 +1,7 @@
 import React from "react";
-import uspImage from "../assets/USP.png";
+import visionImage from "../assets/USP.png";
 import Leadership from "./Leadership";
 import ContactUs from "./ContactUs";
-
-// Import multiple images
 import extraImage1 from "../assets/Logo2.png";
 import extraImage2 from "../assets/Logo3.png";
 import extraImage3 from "../assets/Logo4.png";
@@ -49,7 +47,7 @@ export default function About() {
             as a one-stop shop...
           </p>
         </div>
-        <img src={uspImage} alt="Company Vision" className="vision-image" />
+        <img src={visionImage} alt="Company Vision" className="vision-image" />
       </section>
 
       {/* Leadership */}
