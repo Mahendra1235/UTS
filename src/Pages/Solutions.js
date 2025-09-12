@@ -1,5 +1,5 @@
 import React from "react";
-import SolutionsImage from "../assets/uc.jpg";
+import SolutionsImage from "../assets/coming soon1.jpg";
 
 export default function Solutions() {
   return (

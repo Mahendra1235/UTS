@@ -725,8 +725,8 @@ body {
 .usp-section h2 {
   font-size: 2rem;
   color: #c8cacb;
-  margin-bottom: 20px;
-  border-bottom:5px solid white;
+  /* margin-bottom: 20px; */
+  /* border-bottom:5px solid white; */
   /* color: #2c3e50;
     margin-bottom: 20px;
     border-bottom: 3px solid blue; */
@@ -1071,8 +1071,10 @@ body {
 }
 
 .services-image {
+  background-color: transparent;
   width: 100%;
-  max-width: 400px;
+  max-width: 1400px;
+  max-height: 100vh;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1367,7 +1369,7 @@ body {
 
   .partnership-image {
     width: 100%;
-    max-width: 100%;
+    max-width: 1000px;
     height: auto;
   }
 
