@@ -3,7 +3,7 @@ import cloudIcon from "../assets/cloud.png";
 import automotiveIcon from "../assets/automotive.jpeg";
 import aiIcon from "../assets/ai.jpg";
 import ContactUs from "../Pages/ContactUs";
-import Partners from "../Pages/Partners";
+// import Partners from "../Pages/Partners";
 
 export default function Home() {
   return (
@@ -60,7 +60,7 @@ export default function Home() {
       </section>
 
       {/* Partners & Contact */}
-      <Partners />
+      {/* <Partners /> */}
       <ContactUs />
     </div>
   );
