@@ -66,7 +66,7 @@ body {
   position: relative;
   background-size: cover;
   background-position:center;
-  animation: slideShow 10s infinite;
+  animation: slideShow 5s infinite;
 }
 .hero-slideshow::before {
   content: "";
@@ -280,6 +280,7 @@ body {
 .header {
   /* background: black; */
   background-color: white;
+  background-image: src;
   padding: 0px 60px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   position: sticky;
@@ -351,15 +352,21 @@ body {
   width: 25px;
   height: 20px;
   justify-content: center;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
 }
 
 .hamburger span {
   display: block;
-  height: 3px;
-  background-color: white;
+  height: 150px;
+  background-color: #333;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
+
 
 /* ===== Mobile Styles (≤480px) ===== */
 @media (max-width: 480px) {
@@ -368,7 +375,7 @@ body {
   }
 
   .nav {
-    display: none; /* hidden by default */
+    display: none;
     width: 100%;
     background-color: black;
     flex-direction: column;
@@ -400,6 +407,7 @@ body {
     color: #9ccc00;
   }
 }
+
 
 /* ===== Responsive (Mobile) ===== */
 @media (max-width: 768px) {
@@ -1348,6 +1356,7 @@ body {
 
   /* ===== Industry Partners Section ===== */
   .industry-partners-container {
+    min-height: 66vh;
     padding: 1rem;
   }
 
