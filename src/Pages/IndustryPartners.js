@@ -1,6 +1,5 @@
 import React from "react";
-// import partners from "../assets/Partnership.png";
-import partners from "../assets/coming soon1.jpg";
+import partners from "../assets/coming soon2.jpg";
 
 export default function IndustryPartners() {
   return (
